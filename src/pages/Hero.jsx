@@ -88,7 +88,7 @@ const Hero = (props) => {
         </div>
         <div className=" md:w-[500px] flex justify-center z-10">
           <img
-            src="/public/ai1.png"
+            src="/ai1.png"
             alt="Description"
             className="w-96 h-auto rounded-lg shadow-lg "
           />

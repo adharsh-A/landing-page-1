@@ -79,7 +79,7 @@ const Services = (props) => {
                       transition={{ duration: 1.5, repeat: Infinity,repeatType: "loop",ease: "ease"}}
                       className="w-4/5 p-2">
             <img
-              src="/public/ai2-removebg-preview.png"
+              src="/ai2-removebg-preview.png"
               alt="Service illustration"
               width={150}
               className="w-full h-full object-cover"

@@ -19,6 +19,7 @@
     letter-spacing: -2px;
     line-height: 1.4;
     margin: 0;
+    /* margin-top: 4rem; */
     white-space: nowrap;
     display: flex;
     flex-wrap: nowrap;

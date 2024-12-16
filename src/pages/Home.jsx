@@ -19,9 +19,11 @@ const Home = (props) => {
         <>
 
                   <motion.div className="progress-bar" style={{ scaleX }} />
-      <Hero />
+        <Hero />
+        <div className="mt-[4rem]">
       <ParallaxText baseVelocity={-3}>FrontEnd Development</ParallaxText>
             <ParallaxText baseVelocity={3}>Web Development</ParallaxText>
+        </div>
             <Services />
             <Statistics />
             <Customers />

@@ -1,8 +1,20 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./Home.css";
 import {motion} from "framer-motion";
 
 const Hero = (props) => {
+  const [scrollY, setScrollY] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollY(window.scrollY);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
   return (
     <>
     <div className="relative flex md:mt-28 justify-center h-fit backdrop-blur-lg">
@@ -93,11 +105,13 @@ const Hero = (props) => {
             Agency
           </motion.h1>
         </div>
-        <div className=" md:w-[500px] flex justify-center z-10">
-          <img
+        <div className=" md:w-[500px] flex justify-center z-10 h-full">
+          <motion.img
             src="/ai1.png"
             alt="Description"
-            className="w-96 h-auto rounded-lg shadow-lg "
+              className="w-96 h-auto rounded-lg shadow-lg z-10"
+              animate={{ y: scrollY * 0.1 }} // Adjust speed of the parallax effect
+              transition={{ type: "spring", stiffness: 300, damping: 10 }}
           />
         </div>
       </div>

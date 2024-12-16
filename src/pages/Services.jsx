@@ -75,7 +75,7 @@ const Services = (props) => {
 
         <div className="w-1/2 h-full ">
                   <motion.div
-  animate={{ opacity: 1, scale: [1.1, 1], y: [0, -20, 0] }} // Loop up and down on the y-axis
+  animate={{ opacity: 1, y: [0, -20, 0] }} // Loop up and down on the y-axis
   transition={{
     duration: 2, // Control the speed of the up and down motion
     repeat: Infinity,

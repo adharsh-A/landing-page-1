@@ -1,33 +1,39 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import React, { Suspense, lazy, useEffect, useState } from 'react'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
+// Lazy load pages
+const Home = lazy(() => import('./pages/Home.jsx'))
+const Navbar = lazy(() => import("./components/Navbar.jsx"))
+const Footer = lazy(() => import("./components/Footer.jsx"))
+const NotFound = lazy(() => import("./pages/NotFound.jsx"))
+const Loader = lazy(() => import("./components/Loader.jsx"))
+
+//error boundary
+const ErrorBoundary = lazy(() => import('./pages/ErrorBoundary.jsx'))
 
 function App() {
-  const [count, setCount] = useState(0)
-
+  const [isMobile, setIsMobile] = useState(false)
+  //take width of device
+  useEffect(() => {
+    const windowSize = window.innerWidth < 768 ? true : false;
+    setIsMobile(windowSize);
+  }, []);
   return (
     <>
-      <div >
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)} className="px-2 py-2 bg-white text-black m-2 rounded-xl">
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <BrowserRouter>
+      <Suspense fallback={<Loader />}>
+            <Navbar />
+            <ErrorBoundary>
+        <Suspense fallback={<Loader />}>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+              </Suspense>
+        </ErrorBoundary>
+        <Footer />
+      </Suspense>
+      </BrowserRouter>
     </>
   )
 }

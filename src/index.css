@@ -16,6 +16,8 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  width: 100vw;
+  height: 100vh;
 
 }
 /* viewing leaking in frontend */
@@ -53,11 +55,9 @@ p {
 /* for center and better readability and better body */
 body {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  /* justify-content: center;
+  align-items: center; */
   flex-direction: column;
-  min-height: 100vh; /* Ensure full-screen height */
-  padding: 20px;
 }
 
 html {

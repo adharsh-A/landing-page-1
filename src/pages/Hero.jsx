@@ -72,7 +72,10 @@ const Hero = (props) => {
         }}
       />
       <div className="h-fit flex flex-col items-center">
-          <h1
+          <motion.h1
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1.5, delay: 0.5 }}
             className="  bruno-ace-sc-regular text-[6rem]">
           <span className="bg-gradient-to-r from-slate-100 to-slate-600 bg-clip-text text-transparent">
             WEB3
@@ -80,11 +83,15 @@ const Hero = (props) => {
           <span className="bg-gradient-to-r from-slate-100 to-slate-600 bg-clip-text text-transparent">
             DESIGN
           </span>
-        </h1>
+        </motion.h1>
         <div className="-mt-16 absolute top-40">
-          <h1 className="bruno-ace-sc-regular text-[6rem] bg-gradient-to-r from-fuchsia-600 to-rose-400 bg-clip-text text-transparent text-center ">
+            <motion.h1
+                          initial={{ opacity: 0, y: 30 }}
+                          animate={{ opacity: 1, y: 0 }}
+                          transition={{ duration: 1.5, delay: 1.5 }}
+              className="bruno-ace-sc-regular text-[6rem] bg-gradient-to-r from-fuchsia-600 to-rose-400 bg-clip-text text-transparent text-center ">
             Agency
-          </h1>
+          </motion.h1>
         </div>
         <div className=" md:w-[500px] flex justify-center z-10">
           <img

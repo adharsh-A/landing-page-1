@@ -77,7 +77,7 @@ const Services = (props) => {
                   <motion.div
   animate={{ opacity: 1, y: [0, -20, 0] }} // Loop up and down on the y-axis
   transition={{
-    duration: 2, // Control the speed of the up and down motion
+    duration: 5, // Control the speed of the up and down motion
     repeat: Infinity,
     repeatType: "loop", // Infinite loop
     ease: "easeInOut", // Smooth easing for smooth animation

@@ -43,7 +43,7 @@ const Hero = (props) => {
     x: [0, 100, 300, 500, 0], // Animates horizontally
   }}
   transition={{
-    duration: 5.5,
+    duration: 15.5,
     repeat: Infinity,
     repeatType: "loop",
     ease: "easeInOut", // Applies smooth easing
@@ -60,7 +60,7 @@ const Hero = (props) => {
               y: [0,-10,-40,-100,-200,-300,-400,-500,-400,-300,-200,-100,-50,0],
             }}
             transition={{
-              duration: 5.5,
+              duration: 10.5,
               repeat: Infinity,
               repeatType: "loop",
               ease: "easeInOut", // Smooth easing for the motion

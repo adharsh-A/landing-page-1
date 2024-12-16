@@ -75,9 +75,13 @@ const Services = (props) => {
 
         <div className="w-1/2 h-full ">
                   <motion.div
-                      animate={{ opacity: 1, scale: [1.1, 1], }}
-                      transition={{ duration: 1.5, repeat: Infinity,repeatType: "loop",ease: "ease"}}
-                      className="w-4/5 p-2">
+  animate={{ opacity: 1, scale: [1.1, 1], y: [0, -20, 0] }} // Loop up and down on the y-axis
+  transition={{
+    duration: 2, // Control the speed of the up and down motion
+    repeat: Infinity,
+    repeatType: "loop", // Infinite loop
+    ease: "easeInOut", // Smooth easing for smooth animation
+  }}                      className="w-4/5 p-2">
             <img
               src="/ai2-removebg-preview.png"
               alt="Service illustration"

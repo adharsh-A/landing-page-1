@@ -37,6 +37,119 @@ const Customers = () => {
       text: 'The design is so clean and intuitive. Love it!',
       social: '#',
     },
+    {
+      image:
+        'https://images.unsplash.com/photo-1633332755192-727a05c4013d?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      name: 'John Doe',
+      username: '@johndoe',
+      text: 'This is an amazing company. Highly recommended!',
+      social: '#',
+    },
+    {
+      image:
+        'https://images.unsplash.com/photo-1633332755192-727a05c4013d?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      name: 'Jane Smith',
+      username: '@janesmith',
+      text: 'The design is so clean and intuitive. Love it!',
+      social: '#',
+    },
+    {
+      image:
+        'https://images.unsplash.com/photo-1633332755192-727a05c4013d?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      name: 'John Doe',
+      username: '@johndoe',
+      text: 'This is an amazing company. Highly recommended!',
+      social: '#',
+    },
+    {
+      image:
+        'https://images.unsplash.com/photo-1633332755192-727a05c4013d?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      name: 'Jane Smith',
+      username: '@janesmith',
+      text: 'The design is so clean and intuitive. Love it!',
+      social: '#',
+    },
+    {
+      image:
+        'https://images.unsplash.com/photo-1633332755192-727a05c4013d?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      name: 'John Doe',
+      username: '@johndoe',
+      text: 'This is an amazing company. Highly recommended!',
+      social: '#',
+    },
+    {
+      image:
+        'https://images.unsplash.com/photo-1633332755192-727a05c4013d?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      name: 'Jane Smith',
+      username: '@janesmith',
+      text: 'The design is so clean and intuitive. Love it!',
+      social: '#',
+    },
+    {
+      image:
+        'https://images.unsplash.com/photo-1633332755192-727a05c4013d?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      name: 'John Doe',
+      username: '@johndoe',
+      text: 'This is an amazing company. Highly recommended!',
+      social: '#',
+    },
+    {
+      image:
+        'https://images.unsplash.com/photo-1633332755192-727a05c4013d?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      name: 'Jane Smith',
+      username: '@janesmith',
+      text: 'The design is so clean and intuitive. Love it!',
+      social: '#',
+    },
+    {
+      image:
+        'https://images.unsplash.com/photo-1633332755192-727a05c4013d?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      name: 'John Doe',
+      username: '@johndoe',
+      text: 'This is an amazing company. Highly recommended!',
+      social: '#',
+    },
+    {
+      image:
+        'https://images.unsplash.com/photo-1633332755192-727a05c4013d?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      name: 'Jane Smith',
+      username: '@janesmith',
+      text: 'The design is so clean and intuitive. Love it!',
+      social: '#',
+    },
+    {
+      image:
+        'https://images.unsplash.com/photo-1633332755192-727a05c4013d?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      name: 'John Doe',
+      username: '@johndoe',
+      text: 'This is an amazing company. Highly recommended!',
+      social: '#',
+    },
+    {
+      image:
+        'https://images.unsplash.com/photo-1633332755192-727a05c4013d?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      name: 'Jane Smith',
+      username: '@janesmith',
+      text: 'The design is so clean and intuitive. Love it!',
+      social: '#',
+    },
+    {
+      image:
+        'https://images.unsplash.com/photo-1633332755192-727a05c4013d?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      name: 'John Doe',
+      username: '@johndoe',
+      text: 'This is an amazing company. Highly recommended!',
+      social: '#',
+    },
+    {
+      image:
+        'https://images.unsplash.com/photo-1633332755192-727a05c4013d?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      name: 'Jane Smith',
+      username: '@janesmith',
+      text: 'The design is so clean and intuitive. Love it!',
+      social: '#',
+    },
+    
   ];
 
   return (
@@ -49,22 +162,21 @@ const Customers = () => {
           </span>
         </div>
       </div>
-      <div className="relative w-full overflow-hidden">
+      <div className="relative w-full overflow-hidden mx-auto">
         <motion.div
                  animate={{
-                  x: ["0%", "-100%"], // Move testimonials to the left infinitely
+                  x: ["-200%", "0%"], // Loop animation through left and right
                 }}
                 transition={{
                   repeat: Infinity, // Loop animation
-                  duration: 20, // Animation duration (adjust for speed)
+                  duration: 30, // Animation duration (adjust for speed)
                   ease: "linear",
           }}
-          whileInView={{ x: ["0%", "-100%"] }}
-          className="flex gap-8 w-max">
+          className="flex gap-8 w-auto flex-grow-1">
           {testimonials.map((testimonial, index) => (
             <div
               key={index}
-              className="bg-white/90 border border-slate-300 w-80 h-auto rounded-2xl p-5 relative "
+              className="bg-white/90 border border-slate-300 min-w-80 h-auto rounded-2xl p-5 relative "
             >
               <div className="flex items-center">
                 <img

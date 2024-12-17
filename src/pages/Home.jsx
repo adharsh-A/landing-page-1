@@ -6,6 +6,7 @@ import { motion, useScroll, useSpring } from "framer-motion";
 import Services from "./Services";
 import Statistics from "./Statistics";
 import Customers from "./Customers";
+import BrandScrollSection from "../components/BrandScrollSection";
 
 
 const Home = (props) => {
@@ -24,9 +25,11 @@ const Home = (props) => {
       <ParallaxText baseVelocity={-3}>FrontEnd Development</ParallaxText>
             <ParallaxText baseVelocity={3}>Web Development</ParallaxText>
         </div>
-            <Services />
+        <Services />
+        <BrandScrollSection />
             <Statistics />
-            <Customers />
+        <Customers />
+        
             
           </>
   )

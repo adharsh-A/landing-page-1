@@ -1,8 +1,20 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { FaGithub, FaLinkedin, FaDiscord, FaHome } from 'react-icons/fa';
 import { RiTwitterXFill } from "react-icons/ri";
 
 const Footer = () => {
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsVisible(true);
+    }, 3000);
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (!isVisible) return null;
+
   const brandDetails = {
     brandIcon: <FaHome className="w-6 h-6 text-gray-600" />,
     brandName: 'BrandName',

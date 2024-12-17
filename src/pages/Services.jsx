@@ -48,15 +48,15 @@ const Services = (props) => {
           </p>
           <ol className="flex gap-4 flex-col">
             <li className="flex ">
-              <CheckCircleIcon size={28} color="#d96363" strokeWidth={1.25} />{" "}
+              <CheckCircleIcon size={28} color="#d96363" strokeWidth={1.25} className="mr-2" />{" "}
               <span>Lorem ipsum dolor sit.</span>
             </li>
             <li className="flex ">
-              <CheckCircleIcon size={28} color="#d96363" strokeWidth={1.25} />{" "}
+              <CheckCircleIcon size={28} color="#d96363" strokeWidth={1.25} className="mr-2"/>{" "}
               <span>Lorem ipsum dolor sit.</span>
             </li>
             <li className="flex ">
-              <CheckCircleIcon size={28} color="#d96363" strokeWidth={1.25} />{" "}
+              <CheckCircleIcon size={28} color="#d96363" strokeWidth={1.25} className="mr-2"/>{" "}
               <span>Lorem ipsum dolor sit.</span>
             </li>
           </ol>

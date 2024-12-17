@@ -1,8 +1,10 @@
 import React from 'react';
 import { RiTwitterXLine } from 'react-icons/ri';
+import {motion} from "framer-motion";
 
 const Customers = () => {
   const testimonials = [
+
     {
       image:
         'https://images.unsplash.com/photo-1633332755192-727a05c4013d?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
@@ -13,7 +15,23 @@ const Customers = () => {
     },
     {
       image:
-        'https://images.unsplash.com/photo-1502767089025-6572583495a6?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        'https://images.unsplash.com/photo-1633332755192-727a05c4013d?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      name: 'Jane Smith',
+      username: '@janesmith',
+      text: 'The design is so clean and intuitive. Love it!',
+      social: '#',
+    },
+    {
+      image:
+        'https://images.unsplash.com/photo-1633332755192-727a05c4013d?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      name: 'John Doe',
+      username: '@johndoe',
+      text: 'This is an amazing company. Highly recommended!',
+      social: '#',
+    },
+    {
+      image:
+        'https://images.unsplash.com/photo-1633332755192-727a05c4013d?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       name: 'Jane Smith',
       username: '@janesmith',
       text: 'The design is so clean and intuitive. Love it!',
@@ -31,12 +49,22 @@ const Customers = () => {
           </span>
         </div>
       </div>
-      <div className="relative">
-        <div className="flex justify-center items-center gap-5 flex-wrap shadow-black">
+      <div className="relative w-full overflow-hidden">
+        <motion.div
+                 animate={{
+                  x: ["0%", "-100%"], // Move testimonials to the left infinitely
+                }}
+                transition={{
+                  repeat: Infinity, // Loop animation
+                  duration: 20, // Animation duration (adjust for speed)
+                  ease: "linear",
+          }}
+          whileInView={{ x: ["0%", "-100%"] }}
+          className="flex gap-8 w-max">
           {testimonials.map((testimonial, index) => (
             <div
               key={index}
-              className="bg-white border border-slate-300 w-80 h-auto rounded-2xl p-5 relative"
+              className="bg-white/90 border border-slate-300 w-80 h-auto rounded-2xl p-5 relative "
             >
               <div className="flex items-center">
                 <img
@@ -59,7 +87,7 @@ const Customers = () => {
               </div>
             </div>
           ))}
-        </div>
+        </motion.div>
       </div>
     </div>
   );

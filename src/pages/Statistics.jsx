@@ -2,7 +2,7 @@ import React from "react"
 
 const Statistics = (props) => {
   return (
-      <div className="relative flex flex-row justify-between px-28 lg:h-32 bg-white/10 font-extralight tracking-wider  items-center backdrop-blur-lg z-20 shadow-2xl">
+      <div className="relative flex md:flex-row flex-col justify-between md:px-28 px-8 lg:h-32 bg-white/10 font-extralight tracking-wider  items-center backdrop-blur-lg z-20 shadow-2xl">
           <div className="value">
               <h2>
                   5M+

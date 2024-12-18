@@ -15,7 +15,9 @@ const Brands = [
 
 const BrandScrollSection = () => {
   return (
+    <div className='md-20'>
     <BrandSection brands={Brands} scrollSpeed={0.1} scrollInterval={30}/>
+    </div>
   );
 };
 

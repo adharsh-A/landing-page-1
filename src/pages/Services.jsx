@@ -36,17 +36,17 @@ const Services = (props) => {
       />
       {/* header */}
       <div className="flex justify-center mt-20 items-center">
-        <h2 className="bruno-ace-sc-regular text-6xl">Our Services</h2>
+        <h2 className="bruno-ace-sc-regular md:text-6xl text-3xl">Our Services</h2>
       </div>
-      <div className="w-full h-fit flex">
+      <div className="w-full h-fit flex flex-col md:flex-row">
         {/* part 1 */}
-        <div className=" w-1/2 h-full p-40  relative flex items-start flex-col">
-          <h2 className="tracking-wider  bruno-ace-sc-regular">UI/UX Design</h2>
-          <p className="tracking-wider text-lg w-5/5">
+        <div className=" md:w-1/2 w-full h-full md:p-40 p-10  relative flex items-start flex-col">
+          <h2 className="tracking-wider text-2xl md:text-4xl  bruno-ace-sc-regular">UI/UX Design</h2>
+          <p className="tracking-wider md:text-lg text-sm w-5/5">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima ex
             dolores, assumenda nulla dolorum corrupti.
           </p>
-          <ol className="flex gap-4 flex-col">
+          <ol className="flex gap-2 md:gap-4 flex-col">
             <li className="flex ">
               <CheckCircleIcon size={28} color="#d96363" strokeWidth={1.25} className="mr-2" />{" "}
               <span>Lorem ipsum dolor sit.</span>
@@ -61,7 +61,7 @@ const Services = (props) => {
             </li>
           </ol>
           <Button
-            className="bg-transparent border border-white/70 flex md:mt-4 rounded-2xl  lg:w-32 text-base px-2 py-2"
+            className="bg-transparent border border-white/70 flex md:mt-4 mt-6 rounded-2xl  lg:w-32 text-base px-2 py-2"
             variant="outline"
           >
             Learn More
@@ -73,7 +73,7 @@ const Services = (props) => {
           </Button>
         </div>
 
-        <div className="w-1/2 h-full ">
+        <div className="md:w-1/2 w-full h-full ">
                   <motion.div
   animate={{ opacity: 1, y: [0, -20, 0] }} // Loop up and down on the y-axis
   transition={{
@@ -81,7 +81,7 @@ const Services = (props) => {
     repeat: Infinity,
     repeatType: "loop", // Infinite loop
     ease: "easeInOut", // Smooth easing for smooth animation
-  }}                      className="w-4/5 p-2">
+  }}                      className="md:w-4/5 w-full p-2">
             <img
               src="/ai2-removebg-preview.png"
               alt="Service illustration"

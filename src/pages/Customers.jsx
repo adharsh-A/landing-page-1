@@ -155,8 +155,8 @@ const Customers = () => {
   return (
     <div className='h-screen flex flex-col justify-center items-center '>
       <div className="flex flex-col items-center justify-center  ">
-        <div className="flex flex-col gap-5 mb-8">
-          <span className="text-center text-4xl">Read what people are saying</span>
+        <div className="flex flex-col md:gap-5 gap-3 md:mb-8 mb-4">
+          <span className="text-center md:text-4xl text-2xl">Read what people are saying</span>
           <span className="text-center text-slate-300">
             Dummy feedback from virtual customers <br /> using our component library.
           </span>
@@ -172,11 +172,11 @@ const Customers = () => {
                   duration: 30, // Animation duration (adjust for speed)
                   ease: "linear",
           }}
-          className="flex gap-8 w-auto flex-grow-1">
+          className="flex md:gap-8 gap-2 w-auto flex-grow-1">
           {testimonials.map((testimonial, index) => (
             <div
               key={index}
-              className="bg-white/90 border border-slate-300 min-w-80 h-auto rounded-2xl p-5 relative "
+              className="bg-white/90 border border-slate-300 md:min-w-80 min-w-40 md:h-auto h-40 rounded-2xl md:p-5 p-2 relative "
             >
               <div className="flex items-center">
                 <img
@@ -187,15 +187,16 @@ const Customers = () => {
                   className="rounded-full"
                 />
                 <div className="flex flex-col pl-4">
-                  <span className="text-black">{testimonial.name}</span>
-                  <span className="text-sm text-slate-500">{testimonial.username}</span>
+                  <span className="text-black md:text-base text-sm">{testimonial.name}</span>
+                  <span className="md:text-sm text-xs text-slate-500">{testimonial.username}</span>
                 </div>
               </div>
               <div className="mt-5 mb-5">
-                <span className="text-black">{testimonial.text}</span>
+                <span className="text-black text-xs md:text-base">{testimonial.text}</span>
               </div>
               <div className="absolute top-5 right-5 cursor-pointer">
-                <RiTwitterXLine className="text-slate-800" size={20} />
+                <RiTwitterXLine className="text-slate-800 md:block hidden" size={20} />
+                <RiTwitterXLine className="text-slate-800 md:hidden block absolute left-0 top-0" size={10}  />
               </div>
             </div>
           ))}

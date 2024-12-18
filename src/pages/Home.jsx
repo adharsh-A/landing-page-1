@@ -7,6 +7,7 @@ import Services from "./Services";
 import Statistics from "./Statistics";
 import Customers from "./Customers";
 import BrandScrollSection from "../components/BrandScrollSection";
+import Services2 from "./Services2";
 
 
 const Home = (props) => {
@@ -26,6 +27,7 @@ const Home = (props) => {
             <ParallaxText baseVelocity={3}>Web Development</ParallaxText>
         </div>
         <Services />
+        {/* <Services2 /> */}
         <BrandScrollSection />
             <Statistics />
         <Customers />

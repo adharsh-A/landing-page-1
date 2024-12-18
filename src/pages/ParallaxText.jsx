@@ -46,7 +46,7 @@ const ParalaxText = ({ children, baseVelocity = 100 }) => {
 
   return (
     <div className="parallax">
-    <motion.div className="scroller bruno-ace-sc-regular text-pink-300 " style={{ x }}>
+    <motion.div className="scroller bruno-ace-sc-regular text-pink-300 md:text-[64px] text-[24px] " style={{ x }}>
       <span>{children} </span>
       <span>{children} </span>
       <span>{children} </span>

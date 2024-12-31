@@ -9,8 +9,11 @@ export default defineConfig({
   // Configure external dependencies that are loaded via CDN
   build: {
     rollupOptions: {
-      external: ["react", "react-dom", "framer-motion", "lucide-react"],
+      external: ["react", "react-dom"],
     },
+  },
+  optimizeDeps: {
+    include: ["react", "react-dom"],
   },
   css: {
     postcss: "./postcss.config.js",

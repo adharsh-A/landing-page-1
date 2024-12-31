@@ -83,7 +83,7 @@ const Services = (props) => {
     ease: "easeInOut", // Smooth easing for smooth animation
   }}                      className="md:w-4/5 w-full p-2">
             <img
-              src="/ai2-removebg-preview.png"
+              src="/ai2-removebg-preview.webp"
               alt="Service illustration"
               width={150}
               className="w-full h-full object-cover"

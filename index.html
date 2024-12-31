@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -8,26 +8,32 @@
     <meta property="og:image" content="https://cdn-icons-png.flaticon.com/512/3096/3096991.png" />
     <meta property="og:description" content="Your app description here" />
     <meta property="og:url" content="https://yourwebsite.com" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap" rel="stylesheet" />
     <meta name="theme-color" content="#ffffff" />
     <link
-    rel="icon"
-    href="https://cdn-icons-png.flaticon.com/512/3096/3096991.png"
-    type="image/png"
-  />
-  
+      rel="icon"
+      href="https://cdn-icons-png.flaticon.com/512/3096/3096991.png"
+      type="image/png"
+    />
+
+
+    <!-- React and ReactDOM from CDN -->
+    <script src="https://unpkg.com/react@18.3.1/umd/react.production.min.js" async></script>
+    <script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js" async></script>
+    
+
     <title>Landing Page</title>
   </head>
   <body>
     <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
+
+    <!-- Main App Script -->
+    <script type="module" src="/src/main.jsx" defer></script>
+
     <noscript>
       JavaScript is required to view this application. Please enable JavaScript.
     </noscript>
-    
   </body>
 </html>

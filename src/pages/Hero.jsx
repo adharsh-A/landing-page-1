@@ -115,8 +115,8 @@ const Hero = (props) => {
         </div>
         <div className=" md:w-[500px] flex justify-center z-10 h-fit">
           <motion.img
-            src="/ai1.png"
-            alt="Description"
+            src="/ai1.webp"
+              alt="Description"
               className="w-96 h-auto rounded-lg shadow-lg z-10"
               animate={{ y: scrollY * -0.2 }} // Adjust speed of the parallax effect
               transition={{ type: "spring", stiffness: 100, damping: 100 }}
